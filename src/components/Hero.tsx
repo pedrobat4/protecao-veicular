@@ -56,7 +56,7 @@ export default function Hero() {
             <motion.div variants={item} className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
               <a
                 href="#simulacao"
-                className="group inline-flex items-center justify-center gap-2 rounded-full bg-[var(--color-blue)] px-7 py-4 text-base font-semibold text-white shadow-[0_18px_40px_-14px_rgba(27,97,209,0.85)] transition hover:bg-[var(--color-blue-bright)] active:scale-[0.98]"
+                className="group inline-flex items-center justify-center gap-2 rounded-full bg-[var(--color-blue)] px-7 py-4 text-base font-semibold text-white shadow-[0_18px_40px_-14px_rgba(224,32,40,0.85)] transition hover:bg-[var(--color-blue-bright)] active:scale-[0.98]"
               >
                 Fazer Consulta Gratuita
                 <Arrow />
@@ -83,7 +83,7 @@ export default function Hero() {
             transition={{ duration: 0.9, ease, delay: 0.15 }}
             className="relative"
           >
-            <div className="relative overflow-hidden rounded-[var(--radius-card)] border border-[var(--color-mist)] bg-[var(--color-navy)] shadow-[0_40px_80px_-30px_rgba(10,31,51,0.5)]">
+            <div className="relative overflow-hidden rounded-[var(--radius-card)] border border-[var(--color-mist)] bg-[var(--color-navy)] shadow-[0_40px_80px_-30px_rgba(0,0,0,0.5)]">
               {/* photo (with graceful fallback to gradient) */}
               <div className="relative aspect-[4/5] w-full sm:aspect-[5/6]">
                 {imgOk && (
@@ -99,7 +99,7 @@ export default function Hero() {
                   className="absolute inset-0"
                   style={{
                     background:
-                      'linear-gradient(180deg, rgba(10,31,51,0.25) 0%, rgba(10,31,51,0.55) 55%, rgba(10,31,51,0.92) 100%)',
+                      'linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.55) 55%, rgba(0,0,0,0.92) 100%)',
                   }}
                 />
                 {/* floating cost tag */}

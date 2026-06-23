@@ -18,7 +18,7 @@ export default function Closing() {
             className="pointer-events-none absolute -top-24 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full opacity-50 blur-3xl"
             style={{
               background:
-                'radial-gradient(circle, rgba(46,123,246,0.5), transparent 70%)',
+                'radial-gradient(circle, rgba(224,32,40,0.45), transparent 70%)',
             }}
           />
           <div className="grain pointer-events-none absolute inset-0 opacity-[0.06]" />

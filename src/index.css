@@ -4,21 +4,21 @@
   --font-display: 'Newsreader', ui-serif, Georgia, serif;
   --font-sans: 'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif;
 
-  /* Trust palette — deep navy, signal blue, cool grays */
-  --color-ink: #0a1f33;
-  --color-navy: #0b2e52;
-  --color-navy-700: #103a66;
-  --color-blue: #1b61d1;
-  --color-blue-bright: #2e7bf6;
-  --color-sky: #eaf2ff;
-  --color-sky-soft: #f3f8ff;
-  --color-paper: #f6f8fc;
-  --color-mist: #e4eaf3;
-  --color-slate: #5b6b80;
-  --color-slate-light: #8a99ad;
-  /* restrained "risk" accent */
-  --color-coral: #e2563f;
-  --color-coral-soft: #fbe9e5;
+  /* Inovar palette — black, white, signal red */
+  --color-ink: #16181c;          /* near-black headings/text */
+  --color-navy: #161616;         /* dark brand surface (cards/hero) */
+  --color-navy-700: #050505;     /* darkest gradient end */
+  --color-blue: #e02028;         /* PRIMARY red — actions & accents */
+  --color-blue-bright: #f5333c;  /* vivid red for hover / gradients */
+  --color-sky: #fdeaeb;          /* soft red tint surface */
+  --color-sky-soft: #fef5f6;
+  --color-paper: #f7f7f8;        /* page background (near-white) */
+  --color-mist: #e6e6ea;         /* hairline borders */
+  --color-slate: #56575c;        /* muted body text */
+  --color-slate-light: #8a8b91;
+  /* accent red (same family) */
+  --color-coral: #e02028;
+  --color-coral-soft: #fdeaeb;
 
   --radius-card: 22px;
 }
@@ -112,7 +112,7 @@
   }
   .lead-input:focus {
     border-color: var(--color-blue);
-    box-shadow: 0 0 0 4px rgba(27, 97, 209, 0.12);
+    box-shadow: 0 0 0 4px rgba(224, 32, 40, 0.12);
   }
 }
 

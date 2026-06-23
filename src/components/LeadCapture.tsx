@@ -94,7 +94,7 @@ export default function LeadCapture({ simData }: { simData: SimAnswers }) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.7, ease, delay: 0.08 }}
-            className="rounded-[var(--radius-card)] border border-[var(--color-mist)] bg-white/90 p-8 shadow-[0_40px_90px_-45px_rgba(10,31,51,0.4)] glass sm:p-10"
+            className="rounded-[var(--radius-card)] border border-[var(--color-mist)] bg-white/90 p-8 shadow-[0_40px_90px_-45px_rgba(0,0,0,0.35)] glass sm:p-10"
           >
             {sent ? (
               <div className="flex h-full flex-col items-center justify-center py-6 text-center">
@@ -149,7 +149,7 @@ export default function LeadCapture({ simData }: { simData: SimAnswers }) {
                 <button
                   type="submit"
                   disabled={!valid}
-                  className="inline-flex w-full items-center justify-center gap-2.5 rounded-2xl bg-[var(--color-blue)] px-6 py-4 text-base font-semibold text-white shadow-[0_18px_40px_-16px_rgba(27,97,209,0.9)] transition hover:bg-[var(--color-blue-bright)] active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-40"
+                  className="inline-flex w-full items-center justify-center gap-2.5 rounded-2xl bg-[var(--color-blue)] px-6 py-4 text-base font-semibold text-white shadow-[0_18px_40px_-16px_rgba(224,32,40,0.9)] transition hover:bg-[var(--color-blue-bright)] active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-40"
                 >
                   <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
                     <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.13c-.25.69-1.45 1.32-1.99 1.36-.53.05-.53.43-3.34-.7-2.81-1.13-4.6-3.96-4.74-4.15-.14-.18-1.13-1.5-1.13-2.86 0-1.36.71-2.03.97-2.31.25-.28.55-.35.73-.35.18 0 .37 0 .53.01.17.01.4-.06.62.48.25.6.84 2.06.91 2.21.07.14.12.31.02.49-.09.18-.14.3-.28.46-.14.16-.29.36-.42.48-.14.14-.28.28-.12.55.16.28.71 1.18 1.53 1.9 1.05.94 1.94 1.23 2.21 1.37.28.14.44.12.6-.07.18-.21.69-.8.87-1.08.18-.28.37-.23.62-.14.25.09 1.61.76 1.89.9.28.14.46.21.53.32.07.12.07.65-.18 1.34Z" />

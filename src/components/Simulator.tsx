@@ -116,7 +116,7 @@ export default function Simulator({
         </motion.div>
 
         {/* the panel */}
-        <div className="relative overflow-hidden rounded-[var(--radius-card)] border border-[var(--color-mist)] bg-white/85 shadow-[0_40px_90px_-40px_rgba(10,31,51,0.4)] glass">
+        <div className="relative overflow-hidden rounded-[var(--radius-card)] border border-[var(--color-mist)] bg-white/85 shadow-[0_40px_90px_-40px_rgba(0,0,0,0.35)] glass">
           {/* progress bar */}
           <div className="border-b border-[var(--color-mist)] px-6 pt-5 pb-4 sm:px-8">
             <div className="flex items-center justify-between text-[12px] font-semibold text-[var(--color-slate)]">
@@ -291,7 +291,7 @@ function Result({ answers }: { answers: SimAnswers }) {
 
       <a
         href="#lead"
-        className="group mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-[var(--color-blue)] px-8 py-4 text-base font-semibold text-white shadow-[0_18px_40px_-14px_rgba(27,97,209,0.85)] transition hover:bg-[var(--color-blue-bright)] active:scale-[0.98]"
+        className="group mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-[var(--color-blue)] px-8 py-4 text-base font-semibold text-white shadow-[0_18px_40px_-14px_rgba(224,32,40,0.85)] transition hover:bg-[var(--color-blue-bright)] active:scale-[0.98]"
       >
         Ver minha análise personalizada
         <svg className="transition-transform group-hover:translate-x-1" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>

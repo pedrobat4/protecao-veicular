@@ -55,7 +55,7 @@ export default function Impact() {
                 hidden: { opacity: 0, y: 16 },
                 show: { opacity: 1, y: 0, transition: { duration: 0.55, ease } },
               }}
-              className="group relative overflow-hidden rounded-2xl border border-[var(--color-mist)] bg-white/80 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--color-blue)]/30 hover:shadow-[0_24px_50px_-24px_rgba(10,31,51,0.35)]"
+              className="group relative overflow-hidden rounded-2xl border border-[var(--color-mist)] bg-white/80 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--color-blue)]/30 hover:shadow-[0_24px_50px_-24px_rgba(0,0,0,0.3)]"
             >
               <span className="grid h-11 w-11 place-items-center rounded-xl bg-[var(--color-sky)] text-[var(--color-navy)] transition-colors group-hover:bg-[var(--color-navy)] group-hover:text-white">
                 {r.icon}
