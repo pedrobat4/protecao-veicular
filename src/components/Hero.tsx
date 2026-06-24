@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { motion } from 'motion/react'
 
 const ease = [0.22, 1, 0.36, 1] as const
@@ -13,8 +12,6 @@ const item = {
 }
 
 export default function Hero() {
-  const [imgOk, setImgOk] = useState(true)
-
   return (
     <section id="topo" className="relative pt-28 pb-16 sm:pt-32 md:pt-40 md:pb-24">
       <div className="container-px mx-auto max-w-6xl">
@@ -33,9 +30,9 @@ export default function Hero() {
               variants={item}
               className="mt-6 text-balance text-[2.1rem] leading-[1.05] text-[var(--color-ink)] sm:text-5xl md:text-[3.4rem]"
             >
-              O prejuízo de um acidente raramente avisa quando vai{' '}
-              <span className="relative whitespace-nowrap text-[var(--color-navy)]">
-                chegar
+              Imprevistos custam{' '}
+              <span className="relative whitespace-nowrap text-[var(--color-blue)]">
+                caro
                 <Underline />
               </span>
               .
@@ -83,24 +80,22 @@ export default function Hero() {
             transition={{ duration: 0.9, ease, delay: 0.15 }}
             className="relative"
           >
-            <div className="relative overflow-hidden rounded-[var(--radius-card)] border border-[var(--color-mist)] bg-[var(--color-navy)] shadow-[0_40px_80px_-30px_rgba(0,0,0,0.5)]">
-              {/* photo (with graceful fallback to gradient) */}
+            <div className="relative overflow-hidden rounded-[var(--radius-card)] border border-[var(--color-mist)] bg-gradient-to-b from-[var(--color-navy)] to-black shadow-[0_40px_80px_-30px_rgba(0,0,0,0.5)]">
               <div className="relative aspect-[4/5] w-full sm:aspect-[5/6]">
-                {imgOk && (
-                  <img
-                    src="https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?auto=format&fit=crop&w=1100&q=70"
-                    alt="Trânsito sob chuva — situação que transmite o risco de um imprevisto no veículo"
-                    loading="eager"
-                    onError={() => setImgOk(false)}
-                    className="h-full w-full object-cover"
-                  />
-                )}
+                {/* brilho vermelho da marca */}
                 <div
                   className="absolute inset-0"
                   style={{
                     background:
-                      'linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.55) 55%, rgba(0,0,0,0.92) 100%)',
+                      'radial-gradient(ellipse 78% 62% at 50% 40%, rgba(224,32,40,0.30), transparent 70%)',
                   }}
+                />
+                {/* mascote Inovar */}
+                <img
+                  src="/mascote/tigre-inovar.png"
+                  alt="Mascote da Inovar Proteção Veicular"
+                  loading="eager"
+                  className="absolute inset-x-0 bottom-0 mx-auto h-[97%] w-auto object-contain object-bottom drop-shadow-[0_24px_48px_rgba(0,0,0,0.5)]"
                 />
                 {/* floating cost tag */}
                 <div className="absolute left-4 top-4 rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-white glass">
@@ -111,16 +106,6 @@ export default function Hero() {
                     R$ 8.000<span className="text-white/60">–</span>25.000
                   </p>
                 </div>
-              </div>
-
-              {/* bottom caption strip */}
-              <div className="absolute inset-x-0 bottom-0 p-5">
-                <p className="text-[15px] leading-snug text-white/90">
-                  Quando o imprevisto chega, a conta chega junto.
-                </p>
-                <p className="mt-1 text-[13px] text-white/55">
-                  Veja o que cabe no seu bolso antes que ele aconteça.
-                </p>
               </div>
             </div>
 
